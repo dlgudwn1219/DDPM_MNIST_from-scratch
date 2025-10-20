@@ -1,0 +1,1 @@
+# This code downloads the MNIST dataset to ./MNIST
