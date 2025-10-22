@@ -1,15 +1,14 @@
-import torch
-from torchvision import datasets, transforms
-from utils.plot_mnist import plot_mnist
 import openml
 import os
 import numpy as np
+from utils.plot_mnist import plot_mnist
 
 mnist = openml.datasets.get_dataset(554)
 
 X, y, _, _ = mnist.get_data(target = mnist.default_target_attribute)
 X, y = np.array(X, dtype = np.int64), np.array(y, dtype = np.int64)
 
+# Should be (70000, 784) and (70000,) which means 70000 images & labels
 print(f"X: {X.shape}, y: {y.shape}")
 
 # save in MNIST file

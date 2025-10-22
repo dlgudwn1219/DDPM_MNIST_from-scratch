@@ -16,7 +16,7 @@ def plot_mnist(x: np.ndarray, y: int, folder: str, file_name: str):
     img = x.reshape(28, 28)
     plt.imshow(img, cmap = "gray")
     plt.axis("off")
-    plt.title(f"Class: {y}")
+    plt.title(f"Label: {y}")
 
     save_path = os.path.join(folder, file_name)
     plt.savefig(save_path, bbox_inches = "tight", pad_inches = 0.1)
