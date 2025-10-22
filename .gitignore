@@ -1,0 +1,8 @@
+MNIST/
+.vscode/
+.venv/
+*.pt
+*.ckpt
+*.pyc
+__pycache__/
+outputs/
